@@ -1,5 +1,5 @@
-import { Cliente } from "./cliente.ts"
-import { ItemPedido } from "./itemPedido.ts"
+import { Cliente } from "./cliente.js"
+import { ItemPedido } from "./itemPedido.js"
 
 export class Pedido {
     private readonly _itens: ItemPedido[] = [];
