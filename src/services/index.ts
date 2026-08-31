@@ -4,10 +4,10 @@ import { ItemPedidoPromocional } from "../entities/itemPedidoPromocional.js";
 import { Pedido } from "../entities/pedido.js";
 import { Cliente } from "../entities/cliente.js"
 
+try {
 //==============================================
 // HU01 criar pedido e adicionar produtos
 //==============================================
-try {
     const cliente1 = new Cliente("João")
     const pedido1 = new Pedido(cliente1)
 
@@ -28,6 +28,15 @@ try {
     console.log(item3.toString())
 
     console.log(`Total do pedido: ${pedido1.calcularTotal().toFixed(2)}`)
+
+//==============================================
+// HU02 remover produto do pedido
+//==============================================
+    pedido1.removerItem(item1)
+    console.log('---Após remover o café---')
+
+    console.log(`Pedido recalculado: ${pedido1.calcularTotal().toFixed(2)}`)
+
 } catch (error: unknown) {
     if (error instanceof Error) {
         console.log(`Erro validado: ${error.message}`)
