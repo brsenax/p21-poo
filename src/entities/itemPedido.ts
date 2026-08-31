@@ -25,4 +25,10 @@ export class ItemPedido {
     public toString(): string {
         return `${this._quantidade} x [${this.produto.nome}] | Subtotal: R$ ${this.calcularSubtotal().toFixed(2)}`;
     }
+
+    //implementa alteração de quantidade do produto
+    public set quantidade(novaQuantidade: number) { 
+        this.validarQuantidade(novaQuantidade);
+        this._quantidade = novaQuantidade;
+    }
 }   

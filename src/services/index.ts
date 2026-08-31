@@ -37,6 +37,14 @@ try {
 
     console.log(`Pedido recalculado: ${pedido1.calcularTotal().toFixed(2)}`)
 
+//==============================================
+// HU03 alterar quantidade de um produto
+//==============================================
+    console.log('---Altera quantidade de bolo---')
+    item2.quantidade = 5
+
+    console.log(`Total recalculado: ${pedido1.calcularTotal().toFixed(2)}`)
+
 } catch (error: unknown) {
     if (error instanceof Error) {
         console.log(`Erro validado: ${error.message}`)
@@ -44,10 +52,6 @@ try {
         console.error('Ocorreu um erro ineserado e desconhecido')
     }
 }
-
-//==============================================
-// HU02 remover produto do pedido
-//==============================================
 
 //==============================================
 // HU03 alterar quantidade de um produto
