@@ -1,8 +1,9 @@
-import { Produto } from "../entities/produto.js";
-import { ItemPedido } from "../entities/itemPedido.js";
-import { ItemPedidoPromocional } from "../entities/itemPedidoPromocional.js";
-import { Pedido } from "../entities/pedido.js";
-import { Cliente } from "../entities/cliente.js"
+import { Produto } from "./entities/produto.js";
+import { ItemPedido } from "./entities/itemPedido.js";
+import { ItemPedidoPromocional } from "./entities/itemPedidoPromocional.js";
+import { Pedido } from "./entities/pedido.js";
+import { Cliente } from "./entities/cliente.js"
+
 
 try {
 //==============================================
