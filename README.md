@@ -1,2 +1,3 @@
-<img width="1910" height="1336" alt="Diagrama de Classes - Evolucao Sistema de Pedidos (1)" src="https://github.com/user-attachments/assets/eb982f78-021f-4e01-a6c5-e6bcf22140da" />
+<img width="1057" height="646" alt="image" src="https://github.com/user-attachments/assets/a442b9a8-5736-4966-b38f-5a340fdff2e9" />
+
 
