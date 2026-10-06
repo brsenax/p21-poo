@@ -1,4 +1,4 @@
-import { Cliente } from "./cliente.js"
+import type { Cliente } from "./cliente.js"
 import { ItemPedido } from "./itemPedido.js"
 
 export type SituacaoPedido = "ABERTO" | "FINALIZADO" | "CANCELADO";
@@ -7,10 +7,22 @@ export class Pedido {
     private readonly _itens: ItemPedido[] = [];
     private _situacao: SituacaoPedido = "ABERTO";
 
-    constructor(public readonly cliente: Cliente) {}
+    constructor(
+        public readonly numero: number,
+        public readonly cliente: Cliente
+    ) {}
 
     public get situacao(): SituacaoPedido {
         return this._situacao;
+    }
+
+    // cópia: a lista interna não é exposta
+    public get itens(): readonly ItemPedido[] {
+        return [...this._itens];
+    }
+
+    public buscarItem(codigoProduto: number): ItemPedido | undefined {
+        return this._itens.find(item => item.produto.id === codigoProduto);
     }
 
     private validarPedidoAberto(): void {
