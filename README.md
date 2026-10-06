@@ -1,4 +1,4 @@
-<img width="1077" height="673" alt="image" src="https://github.com/user-attachments/assets/df56aa08-e273-433a-815f-99a426b6ebe9" />
+   ![Diagrama de classes da P23](docs/diagrama-de-classes-p23.png)
 
 ## P23 - Repositories e persistência em memória
 
@@ -6,5 +6,5 @@
 - Executar as demonstrações HU01 a HU10: `npm start`
 - Verificar tipos: `npm run check`
 
-O diagrama acima (imagem) é o da P21.
+
 
